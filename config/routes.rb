@@ -14,6 +14,12 @@ Rails.application.routes.draw do
       get 'shops/:id', to: 'shops#show'
       patch 'shops/:id', to: 'shops#update'
       delete 'shops/:id', to: 'shops#delete'
+
+      get 'products', to: 'products#index'
+      post 'products', to: 'products#create'
+
+      get 'wish_list_items', to: 'wish_list_items#index'
+      post 'wish_list_items', to: 'wish_list_items#create'
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
